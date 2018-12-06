@@ -21,10 +21,12 @@ public class Senai {
        
         Pessoa p1 =  new Pessoa("Maria", 5463246, 42);
         Endereco end1 = new Endereco("Rua A", "77", "Cajazeiras");
+        //Ceclarando a associação
+        p1.setEndereco(end1);
         
         Pessoa p2 = new Pessoa("José",  6464, 45);
         Endereco end2 = new Endereco("Rua B", "95", "Itaigara");
-        
+           //Ceclarando a associação
         p2.setEndereco(end2);
     }
     
