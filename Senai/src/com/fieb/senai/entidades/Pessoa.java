@@ -17,6 +17,7 @@ public class Pessoa {
     private Integer idade;
     
     private Endereco Endereco;
+    private Telefone Telefone;
     
     public Pessoa(String nome, Integer matricula, Integer idade) {
         this.nome = nome;

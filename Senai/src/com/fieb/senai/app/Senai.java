@@ -28,6 +28,7 @@ public class Senai {
         Endereco end2 = new Endereco("Rua B", "95", "Itaigara");
            //Ceclarando a associação
         p2.setEndereco(end2);
+                
     }
-    
+   
 }
