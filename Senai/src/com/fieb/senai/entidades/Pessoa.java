@@ -60,6 +60,16 @@ public class Pessoa {
 
     public void setEndereco(Endereco Endereco) {
         this.Endereco = Endereco;
+        
+        
+    }
+
+    public Telefone getTelefone() {
+        return Telefone;
+    }
+
+    public void setTelefone(Telefone Telefone) {
+        this.Telefone = Telefone;
     }
     
 
