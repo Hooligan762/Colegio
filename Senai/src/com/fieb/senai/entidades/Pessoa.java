@@ -5,6 +5,9 @@
  */
 package com.fieb.senai.entidades;
 
+import com.sun.javafx.scene.control.skin.VirtualFlow;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -17,7 +20,18 @@ public class Pessoa {
     private Integer idade;
     
     private Endereco Endereco;
-    private Telefone Telefone;
+    
+    
+    private List<Telefone> telefone = new ArrayList<>();
+
+    public List<Telefone> getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(List<Telefone> telefone) {
+        this.telefone.addAll(telefone);
+    }
+    
     
     public Pessoa(String nome, Integer matricula, Integer idade) {
         this.nome = nome;
@@ -63,14 +77,7 @@ public class Pessoa {
         
         
     }
-
-    public Telefone getTelefone() {
-        return Telefone;
-    }
-
-    public void setTelefone(Telefone Telefone) {
-        this.Telefone = Telefone;
-    }
+   
     
 
     @Override
